@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+# We need a stack of 256-bit words with a maximum size of 1024 for the EVM
 class Stack
 	def initialize(max_depth=1024)
 		@stack = []
@@ -22,9 +23,3 @@ class Stack
 		@stack
 	end
 end
-
-
-# stack = StackEVM.new
-# stack.push(5)
-# require 'pry'; binding.pry
-# puts "This is our stack: #{stack.get_stack}"

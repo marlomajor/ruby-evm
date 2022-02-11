@@ -1,6 +1,5 @@
 require 'minitest/autorun'
 require 'pry'
-
 require_relative '../lib/stack'
 
 class StackTest < Minitest::Test
@@ -25,7 +24,7 @@ class StackTest < Minitest::Test
 
 	def test_stack_data_structure
 		startup
-		
+
 		assert_kind_of Array, @stack.get_stack
 	end
 
